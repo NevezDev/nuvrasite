@@ -13,8 +13,8 @@ const Footer = () => {
     {
       icon: Phone,
       title: 'Telefone',
-      content: '(75) 9 9977-9590',
-      link: 'tel:+5575999779590'
+      content: '(75) 9 3199-3242',
+      link: 'tel:+5575931993242'
     },
     {
       icon: MapPin,
