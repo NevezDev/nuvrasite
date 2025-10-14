@@ -59,7 +59,7 @@ const Chatbot = () => {
     return mockResponses.default;
   };
 
-  const N8N_URL = import.meta.env.VITE_N8N_CHATBOT_URL as string | undefined;
+  import { N8N_CHATBOT_URL } from '../config';
 
   const handleSend = async () => {
     if (!inputValue.trim()) return;
@@ -75,7 +75,7 @@ const Chatbot = () => {
     setIsTyping(true);
 
     // Quando a URL do n8n está configurada, envia ao webhook
-    if (N8N_URL) {
+    if (N8N_CHATBOT_URL) {
       try {
         const history = [...messages, userMessage].map((m) => ({
           role: m.isUser ? 'user' : 'assistant',
@@ -83,7 +83,7 @@ const Chatbot = () => {
           timestamp: m.timestamp.toISOString(),
         }));
 
-        const res = await fetch(N8N_URL, {
+        const res = await fetch(N8N_CHATBOT_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ message: userMessage.text, sessionId, history }),
