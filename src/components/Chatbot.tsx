@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send } from 'lucide-react';
+import { N8N_CHATBOT_URL } from '../config';
 
 interface Message {
   text: string;
@@ -59,7 +60,6 @@ const Chatbot = () => {
     return mockResponses.default;
   };
 
-  import { N8N_CHATBOT_URL } from '../config';
 
   const handleSend = async () => {
     if (!inputValue.trim()) return;
