@@ -83,7 +83,7 @@ const CTA = () => {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
           >
             <motion.a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/557531993242"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
