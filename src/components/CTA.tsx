@@ -115,12 +115,12 @@ const CTA = () => {
             className="flex justify-center items-center space-x-8"
           >
             <SocialLink
-              href="https://www.instagram.com/nuvra.solutions"
+              href="https://www.instagram.com/nuvrasolutions"
               icon={Instagram}
               label="Veja nossos bastidores"
             />
             <SocialLink
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/557531993242"
               icon={() => (
                 <svg
                   viewBox="0 0 24 24"
