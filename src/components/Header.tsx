@@ -125,12 +125,12 @@ const Header = () => {
               ))}
               <div className="flex items-center space-x-4 pt-4 border-t border-gray-800">
                 <SocialIcon
-                  href="https://www.instagram.com/nuvra.solutions"
+                  href="https://www.instagram.com/nuvrasolutions"
                   icon={Instagram}
                   label="Instagram"
                 />
                 <SocialIcon
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/557531993242"
                   icon={() => (
                     <svg
                       viewBox="0 0 24 24"
