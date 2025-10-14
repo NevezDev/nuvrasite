@@ -85,9 +85,21 @@ const Chatbot = () => {
 
         const res = await fetch(N8N_CHATBOT_URL, {
           method: 'POST',
+          mode: 'cors',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ message: userMessage.text, sessionId, history }),
         });
+
+        if (!res.ok) {
+          const errBody = await res.text().catch(() => '');
+          const botResponse: Message = {
+            text: `Erro ao conectar: ${res.status} ${res.statusText}${errBody ? ' - ' + errBody.slice(0, 200) : ''}`,
+            isUser: false,
+            timestamp: new Date(),
+          };
+          setMessages((prev) => [...prev, botResponse]);
+          return;
+        }
 
         let replyText = '';
         const contentType = res.headers.get('content-type') || '';
@@ -106,8 +118,9 @@ const Chatbot = () => {
         };
         setMessages((prev) => [...prev, botResponse]);
       } catch (err) {
+        console.error('Chatbot conexão falhou:', err);
         const botResponse: Message = {
-          text: 'Desculpe, houve um erro ao conectar ao assistente. Tente novamente.',
+          text: 'Desculpe, houve um erro de rede/CORS ao conectar ao assistente. Tente novamente.',
           isUser: false,
           timestamp: new Date(),
         };
