@@ -25,7 +25,7 @@ const projects = [
     id: 4,
     title: 'Chatbot Inteligente',
     category: 'IA & Automação',
-    image: 'https://images.pexels.com/photos/8438925/pexels-photo-8438925.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Assistente virtual com IA para atendimento ao cliente 24/7 com processamento de linguagem natural.',
     stack: ['Python', 'OpenAI API', 'NLP', 'WebSocket'],
     results: 'Redução de 65% no tempo de resposta',
