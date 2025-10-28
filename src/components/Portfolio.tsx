@@ -4,15 +4,6 @@ import { ExternalLink, X } from 'lucide-react';
 
 const projects = [
   {
-    id: 1,
-    title: 'E-commerce Tech Store',
-    category: 'Desenvolvimento Web',
-    image: 'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Plataforma completa de e-commerce com integração de pagamentos, gestão de estoque e painel administrativo.',
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    results: '+280% em vendas online no primeiro trimestre',
-  },
-  {
     id: 2,
     title: 'Campanha SaaS B2B',
     category: 'Tráfego Pago',
@@ -38,15 +29,6 @@ const projects = [
     description: 'Assistente virtual com IA para atendimento ao cliente 24/7 com processamento de linguagem natural.',
     stack: ['Python', 'OpenAI API', 'NLP', 'WebSocket'],
     results: 'Redução de 65% no tempo de resposta',
-  },
-  {
-    id: 5,
-    title: 'App Fitness Mobile',
-    category: 'Desenvolvimento Mobile',
-    image: 'https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Aplicativo mobile para acompanhamento de treinos com gamificação e integração com wearables.',
-    stack: ['React Native', 'Firebase', 'HealthKit', 'Redux'],
-    results: '50k+ downloads em 3 meses',
   },
   {
     id: 6,
